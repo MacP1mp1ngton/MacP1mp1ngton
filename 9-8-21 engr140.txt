@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+	int a, b;
+	float result; 
+	do{
+	printf("Two int please: ");
+	scanf("%i %i", &a, &b);
+	printf("Cannot divide by 0!\n")
+	}while (b==0);
+
+	result = a/(float)b;
+	if(b==0){
+		printf("Cannot divide by 0!\n");
+		printf("please try again: ");
+		scanf("%i %i, &a, &b);}
+		result = a/(float)b;
+	}
+	printf("%i/%i=%f\n", a, b, result);
+
+	printf("Come back soon!\n");
+	return 0;
+}
